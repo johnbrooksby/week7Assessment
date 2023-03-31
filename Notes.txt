@@ -1,0 +1,21 @@
+The doublerAppend function took around 2.4-3.1 ms to run extraLargeArray on my machine
+The doublerInsert function took around 666-671 ms to run extraLargeArray on my machine
+
+The doublerAppend function took around 414-441 microseconds to run largeArray on my machine
+The doublerInsert function took around 6.7-6.8 ms to run largeArray on my machine
+
+The doublerAppend function took around 112-123 microseconds to run mediumArray on my machine
+The doublerInsert function took around 152-168 microseconds to run mediumArray on my machine
+
+The doublerAppend function took around 100-132 microseconds to run smallArray on my machine
+The doublerInsert function took around 69-77 microseconds to run smallArray on my machine
+
+The doublerAppend function took around 76-95 microseconds to run tinyArray on my machine
+The doublerInsert function took around 33-38 microseconds to run tinyArray on my machine
+____________________________________________________________________________________________
+
+The doublerAppend function has a time complexity of O(n).  I know this because the .push() function simply adds a number to the end of the new_nums array, and doesn't have to relocate every previous input the way the doubleInsert function does by using .unshift().  The doublerInsert function has a time complexity of O(n^2).  
+
+With all five tests' results laid out together, it is easy to see that the doublerAppend function is much more efficient with longer arrays (higher numbers in this case), but it loses its advantage with a very short array.
+
+**Extra credit** I believe I already answered this in the first paragraph above.
